@@ -96,6 +96,7 @@ export default function useAuthUser() {
    * after confirming email address
    */
   const maybeHandleEmailConfirmation = async (route) => {};
+  
   return {
     user,
     login,

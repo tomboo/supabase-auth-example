@@ -31,15 +31,12 @@ const handleSubmit = async () => {
   }
 };
 </script>
-
 <template>
   <form class="max-w-lg m-auto" @submit.prevent="handleSubmit">
     <h1 class="text-3xl mb-5">Register</h1>
     <label>Name <input v-model="form.name" type="text" /></label>
     <label>Email <input v-model="form.email" type="email" /></label>
-    <!--<label>Password <input v-model="form.password" type="password" /></label>-->
-    <!-- Note: Use type='text' for password field so that you can catch typing errors -->
-    <label>Password <input v-model="form.password" type="text" /></label>
+    <label>Password <input v-model="form.password" type="password" /></label>
     <button>Register</button>
   </form>
 </template>
